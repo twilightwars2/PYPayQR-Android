@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userdata">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/logoutbtn"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
+            android:text="@string/logoutbtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/paymentbtn"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
+            android:text="@string/paymentnav"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/logoutbtn">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp">
+
+                <TextView
+                    android:id="@+id/dp"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/datatitle"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/value"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/valtitle"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp">
+
+                <TextView
+                    android:id="@+id/dp_user"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/userform"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/value_user"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/valtitle"
+                    android:textSize="20sp"
+                    android:textColor="@color/darkor"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp">
+
+                <TextView
+                    android:id="@+id/dp_email"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/emailform"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/value_email"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/valtitle"
+                    android:textSize="15sp"
+                    android:textColor="@color/darkor"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp">
+
+                <TextView
+                    android:id="@+id/dp_first"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/firstform"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/value_first"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/valtitle"
+                    android:textSize="20sp"
+                    android:textColor="@color/darkor"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp">
+
+                <TextView
+                    android:id="@+id/dp_last"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/lastform"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/value_last"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/valtitle"
+                    android:textSize="20sp"
+                    android:textColor="@color/darkor"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp">
+
+                <TextView
+                    android:id="@+id/dp_bal"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/balform"
+                    android:textColor="@color/blue"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/value_bal"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/valtitle"
+                    android:textColor="@color/blue"
+                    android:textSize="25sp" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/who"
+            android:layout_width="329dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="@font/orbitron"
+            android:text="@string/whodata"
+            android:textColor="@color/purple"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/table"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/connect">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.pypayqr.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_logincon"
+            app:destination="@id/logincon" />
+        <action
+            android:id="@+id/action_login_to_signup"
+            app:destination="@id/signup"
+            app:enterAnim="@anim/slide" />
+    </fragment>
+    <fragment
+        android:id="@+id/QR"
+        android:name="com.example.pypayqr.QR"
+        android:label="fragment_qr"
+        tools:layout="@layout/fragment_qr" >
+        <action
+            android:id="@+id/action_QR_to_load"
+            app:destination="@id/load" />
+    </fragment>
+    <fragment
+        android:id="@+id/userdata"
+        android:name="com.example.pypayqr.userdata"
+        android:label="fragment_userdata"
+        tools:layout="@layout/fragment_userdata" >
+        <action
+            android:id="@+id/action_userdata_to_QR"
+            app:destination="@id/QR"
+            app:enterAnim="@anim/slide" />
+        <action
+            android:id="@+id/action_userdata_to_connect"
+            app:destination="@id/connect" />
+    </fragment>
+    <fragment
+        android:id="@+id/connect"
+        android:name="com.example.pypayqr.connect"
+        android:label="fragment_connect"
+        tools:layout="@layout/fragment_connect" >
+        <action
+            android:id="@+id/action_connect_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_connect_to_QR"
+            app:destination="@id/QR" />
+    </fragment>
+    <fragment
+        android:id="@+id/load"
+        android:name="com.example.pypayqr.load"
+        android:label="fragment_load"
+        tools:layout="@layout/fragment_load" >
+        <action
+            android:id="@+id/action_load_to_userdata"
+            app:destination="@id/userdata" />
+    </fragment>
+    <fragment
+        android:id="@+id/logincon"
+        android:name="com.example.pypayqr.logincon"
+        android:label="fragment_logincon"
+        tools:layout="@layout/fragment_logincon" >
+        <action
+            android:id="@+id/action_logincon_to_connect"
+            app:destination="@id/connect" />
+        <action
+            android:id="@+id/action_logincon_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/signup"
+        android:name="com.example.pypayqr.Signup"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signup_to_signupcon"
+            app:destination="@id/signupcon" />
+        <action
+            android:id="@+id/action_signup_to_login"
+            app:destination="@id/login"
+            app:enterAnim="@anim/slide" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupcon"
+        android:name="com.example.pypayqr.signupcon"
+        android:label="fragment_signupcon"
+        tools:layout="@layout/fragment_signupcon" >
+        <action
+            android:id="@+id/action_signupcon_to_signup"
+            app:destination="@id/signup" />
+        <action
+            android:id="@+id/action_signupcon_to_connect"
+            app:destination="@id/connect" />
+    </fragment>
+</navigation>

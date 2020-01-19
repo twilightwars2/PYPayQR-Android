@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">PYPay QR</string>
+    <string name="welcome_img">welcome</string>
+    <string name="setting">setting</string>
+    <string name="scan">scan</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="copy">copy</string>
+    <string name="openthewebsite">open the website</string>
+    <string name="scanre">Show QR code to the camera,the system will focus automatically!</string>
+    <string name="remind">Scan QR code successfully!</string>
+    <string name="scanagain">scan again</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="loginbtn">Login</string>
+    <string name="signuptxt"><u>Dont have an account? Signup</u></string>
+    <string name="mark">Version2.0/PYpay/PYsales2019</string>
+    <string name="connecting">connecting...</string>
+    <string name="todo">TODO</string>
+    <string name="paymentnav">Payment</string>
+    <string name="usernav">Userdata</string>
+    <string name="reqr">Please show QR code to the robot for payment!</string>
+    <string name="welcomebackqr">Welcome back,sun!</string>
+    <string name="showqrbtn">show QR code</string>
+    <string name="logoutbtn">logout</string>
+    <string name="datatitle">Data point</string>
+    <string name="valtitle">Value</string>
+    <string name="userform">Username</string>
+    <string name="emailform">Email</string>
+    <string name="firstform">First name</string>
+    <string name="lastform">Last name</string>
+    <string name="balform">Balance</string>
+    <string name="whodata">Sun\'s personal data</string>
+    <string name="tryback">back</string>
+    <string name="signup">Signup</string>
+    <string name="backlog"><u>Already have an account? Login</u></string>
+    <string name="emailtxt">Email</string>
+    <string name="fnametxt">First name</string>
+    <string name="lastnametxt">Last name</string>
+    <string name="passtxt">Password</string>
+    <string name="conpasstxt">Confirm Password</string>
+    <string name="signbtn">signup</string>
+
+</resources>

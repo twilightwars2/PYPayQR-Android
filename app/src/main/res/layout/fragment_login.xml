@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"
+    tools:context=".Login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/logsub"
+            android:layout_width="169dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginBottom="66dp"
+            android:fontFamily="@font/orbitron"
+            android:textStyle="bold"
+            android:shadowColor="#555555"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:shadowRadius="3.0"
+            android:text="@string/login"
+            android:textColor="@color/purple"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toTopOf="@+id/logIDtxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/logID"
+            android:layout_width="130dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="82dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/logIDtxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logIDtxt" />
+
+        <TextView
+            android:id="@+id/logIDtxt"
+            android:layout_width="92dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/username"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/logpasstxt"
+            app:layout_constraintEnd_toStartOf="@+id/logID"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logsub" />
+
+        <TextView
+            android:id="@+id/logpasstxt"
+            android:layout_width="92dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginBottom="48dp"
+            android:text="@string/password"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+            app:layout_constraintEnd_toStartOf="@+id/logpass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logIDtxt" />
+
+        <EditText
+            android:id="@+id/logpass"
+            android:layout_width="130dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="82dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/logpasstxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/logpasstxt"
+            tools:ignore="LabelFor"
+            tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_width="177dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginBottom="34dp"
+            android:text="@string/loginbtn"
+            app:layout_constraintBottom_toTopOf="@+id/remindsignbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/expletus_sans_italic"
+            android:text="@string/mark"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/remindsignbtn" />
+
+        <TextView
+            android:id="@+id/remindsignbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="84dp"
+            android:layout_marginBottom="70dp"
+            android:text="@string/signuptxt"
+            android:textColor="@color/blue"
+            app:layout_constraintBottom_toTopOf="@+id/ver"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/allerta_stencil</item>
+        <item>@font/bowlby_one</item>
+        <item>@font/bungee</item>
+        <item>@font/cousine_italic</item>
+        <item>@font/expletus_sans_italic</item>
+        <item>@font/federant</item>
+        <item>@font/orbitron</item>
+        <item>@font/ruslan_display</item>
+    </array>
+</resources>

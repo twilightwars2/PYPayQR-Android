@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "285005839402",
+    "firebase_url": "https://pypay-cloudserver.firebaseio.com",
+    "project_id": "pypay-cloudserver",
+    "storage_bucket": "pypay-cloudserver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285005839402:android:a63557741eceb40cde5753",
+        "android_client_info": {
+          "package_name": "com.example.pypayqr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285005839402-7mhadm7j2govibch257kvnkahg73eme1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pypayqr",
+            "certificate_hash": "5ad8d1c2a020c30b44b97b02dbbe06754ce9c20e"
+          }
+        },
+        {
+          "client_id": "285005839402-183mail6uv0kfd6lpa5arvodm9aq1glo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_DogUMJvUSPnEc69VXE14Bl6e3Fd590w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285005839402-183mail6uv0kfd6lpa5arvodm9aq1glo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
